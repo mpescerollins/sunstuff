@@ -6,7 +6,7 @@ import matplotlib.patches as patches
 import matplotlib.dates as mdates
 from matplotlib.patches import Rectangle
 import matplotlib
-from Flare import *
+#from Flare import *
 
 
 import sys
@@ -89,7 +89,7 @@ detection_list = ['2011-03-07 20:10:40','2011-06-02 09:41:55','2011-06-07 07:33:
                 '2024-02-09 13:30:00', '2024-02-14 04:30:00', '2024-02-16 06:55:00', '2024-03-10 13:30:00', \
                 '2024-07-16 13:30:00', '2024-09-09 07:30:00', '2024-09-14 16:30:00', '2024-10-01 22:30:00', \
                 '2024-10-09 01:30:00', '2024-12-08 10:30:00', '2025-03-28 16:30:00', '2025-04-21 22:30:00',\
-                '2025-05-31 01:30:00', '2025-07-15 07:30:00','2025-11-11 10:30:00'    ]
+                '2025-05-31 01:30:00', '2025-07-15 07:30:00','2025-11-11 10:30:00' , '2026-01-22 03:00:00'   ]
 
 #Sun monitor reports this flare '2022-05-29 20:07:00', but from a more careful cross check it does not seem to be a detection of a flare.
 #Sun monitor report this flare 2022-08-29 22:30 but again, it does not look like a detection.
@@ -161,7 +161,7 @@ spotarray = spotarray[datemask]
 plotstart =  DT.datetime(1979,1,1,0,0,0)
 #plotend =  DT.datetime(2015,10,1,0,0,0)
 #plotend =  DT.datetime(2017,12,1,0,0,0)
-plotend =  DT.datetime(2026,1,15,0,0,0)
+plotend =  DT.datetime(2026,1,25,0,0,0)
 
 START = mdates.date2num(plotstart)
 END = mdates.date2num(plotend)
